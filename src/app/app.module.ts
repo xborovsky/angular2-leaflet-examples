@@ -1,5 +1,6 @@
+import { routesConfig } from './routes-config';
 import { TimelineComponent } from './timeline/timeline.component';
-import { MapComponent } from './map/map.component';
+import { MapSliderComponent } from './map-slider/map-slider.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -7,18 +8,20 @@ import { HttpModule } from '@angular/http';
 import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 
 import { AppComponent } from './app.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MapComponent,
+    MapSliderComponent,
     TimelineComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    LeafletModule.forRoot()
+    LeafletModule.forRoot(),
+    RouterModule.forRoot(routesConfig)
   ],
   providers: [],
   bootstrap: [AppComponent]

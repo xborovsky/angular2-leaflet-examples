@@ -3,11 +3,11 @@ import { Component, OnInit } from '@angular/core';
 import * as L from 'leaflet';
 
 @Component({
-  selector: 'app-map',
-  templateUrl: './map.component.html',
-  styleUrls: ['./map.component.css']
+  selector: 'app-map-slider',
+  templateUrl: './map-slider.component.html',
+  styleUrls: ['./map-slider.component.css']
 })
-export class MapComponent implements OnInit {
+export class MapSliderComponent implements OnInit {
 
   options:any;
   layersControl:any;
