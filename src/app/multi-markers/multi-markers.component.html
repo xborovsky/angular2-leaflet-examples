@@ -1,0 +1,9 @@
+<div class="container">
+    <div style="height: 500px;"
+      leaflet 
+      [leafletOptions]="options"
+      [leafletLayersControl]="layersControl"
+      [leafletLayers]="layers"
+      (leafletMapReady)="onMapReady($event)">
+    </div>
+  </div>

@@ -1,3 +1,4 @@
+import { MultiMarkersComponent } from './multi-markers/multi-markers.component';
 import { routesConfig } from './routes-config';
 import { TimelineComponent } from './timeline/timeline.component';
 import { MapSliderComponent } from './map-slider/map-slider.component';
@@ -14,7 +15,8 @@ import { RouterModule } from '@angular/router';
   declarations: [
     AppComponent,
     MapSliderComponent,
-    TimelineComponent
+    TimelineComponent,
+    MultiMarkersComponent
   ],
   imports: [
     BrowserModule,
