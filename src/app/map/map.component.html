@@ -1,0 +1,12 @@
+<div style="height: 500px;"
+  leaflet 
+  [leafletOptions]="options"
+  [leafletLayersControl]="layersControl"
+  (leafletMapReady)="onMapReady($event)">
+</div>
+
+<div class="container">
+  <div class="col-sm-12 col-md-8 col-lg-6 col col-md-offset-2 col-lg-offset-3">
+    <app-timeline (valueChanged)="updateOverlay($event)"></app-timeline>
+  </div>
+</div>

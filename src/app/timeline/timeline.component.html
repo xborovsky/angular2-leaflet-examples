@@ -1,0 +1,4 @@
+<input type="range" name="timeline" id="timeline" 
+  value="{{ currentVal }}" [min]="minVal" [max]="maxVal" [step]="step"
+  data-show-value="true" data-popup-enabled="true" (change)="updateOverlay(slider.value)"
+  #slider="ngModel" ngModel />
